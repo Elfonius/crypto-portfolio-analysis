@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this skill, cite it as below."
+title: "Crypto & Web3 Portfolio Analysis"
+abstract: "A read-only, source-bounded skill for professional crypto and Web3 portfolio review."
+authors:
+  - name: "Crypto Portfolio Analysis contributors"
+version: 1.0.0
+date-released: 2026-10-30
+license: MIT
+repository-code: "https://github.com/Elfonius/crypto-portfolio-analysis"
+keywords:
+  - crypto
+  - portfolio
+  - risk
+  - defi
+  - web3
+  - investment-analysis

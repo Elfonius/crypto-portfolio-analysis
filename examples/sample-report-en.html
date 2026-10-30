@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<title>Synthetic Portfolio Review — Crypto &amp; Web3 Portfolio Analysis</title>
+<meta name="author" content="Crypto Portfolio Analysis contributors">
+<meta name="description" content="Synthetic full-review example for the Crypto & Web3 Portfolio Analysis skill.">
+<style>
+@page { size: A4; margin: 15mm 14mm 17mm 14mm; }
+* { box-sizing: border-box; }
+body { font-family: "Segoe UI", Arial, sans-serif; color: #1d2731; font-size: 9.4pt; line-height: 1.48; margin: 0; background: #fff; }
+h1 { font-size: 30pt; line-height: 1.05; color: #0b3c5d; margin: 0 0 8px; letter-spacing: -0.8px; }
+h2 { font-size: 16pt; color: #0b3c5d; border-bottom: 2px solid #0b3c5d; padding-bottom: 4px; margin: 22px 0 10px; break-after: avoid; }
+h3 { font-size: 11pt; color: #123b56; margin: 14px 0 5px; break-after: avoid; }
+p { margin: 0 0 8px; text-align: justify; }
+ul, ol { margin: 5px 0 9px 18px; padding: 0; }
+li { margin: 2px 0; }
+code { background: #eef3f7; color: #0b3c5d; padding: 1px 4px; font-size: 8.5pt; }
+blockquote { border-left: 4px solid #c99a00; background: #fff8e1; margin: 10px 0; padding: 8px 12px; color: #4e342e; font-size: 9pt; }
+table { width: 100%; border-collapse: collapse; margin: 7px 0 11px; font-size: 7.9pt; line-height: 1.3; }
+th { background: #0b3c5d; color: white; text-align: left; padding: 5px; font-weight: 600; vertical-align: bottom; }
+td { border-bottom: 1px solid #e4eaf0; padding: 4px 5px; vertical-align: top; }
+tbody tr:nth-child(even) { background: #f8fafc; }
+.cover { min-height: 247mm; display: flex; flex-direction: column; justify-content: space-between; padding-top: 10mm; }
+.eyebrow { color: #c99a00; font-size: 8.5pt; letter-spacing: 1.7px; font-weight: 700; text-transform: uppercase; }
+.cover .lead { font-size: 14pt; color: #334e68; margin-top: 16px; max-width: 158mm; }
+.cover .rule { width: 58mm; height: 3px; background: #c99a00; margin: 18px 0; }
+.meta { border-top: 1px solid #d9e2ec; padding-top: 10px; display: grid; grid-template-columns: 1fr 1fr; gap: 6px 18px; font-size: 8.8pt; }
+.meta b { color: #102a43; }
+.disclaimer { border-left: 3px solid #c99a00; padding: 9px 12px; background: #fff8e1; font-size: 8.4pt; color: #4e342e; }
+.tag { display: inline-block; background: #b23a48; color: white; font-size: 7.4pt; font-weight: 700; letter-spacing: .6px; padding: 2px 6px; margin-bottom: 7px; }
+.callout { border-left: 4px solid #328cc1; background: #f1f8fc; padding: 8px 11px; margin: 10px 0; font-size: 8.9pt; }
+figure { margin: 9px 0 13px; break-inside: avoid; page-break-inside: avoid; }
+figure img { width: 100%; max-height: 210px; object-fit: contain; display: block; border: 1px solid #e4eaf0; }
+figcaption { color: #52606d; font-size: 7.6pt; padding-top: 4px; }
+figcaption b { color: #102a43; }
+
+.cover-kpis { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin: 18px 0 0; }
+.cover-kpi { border-top: 2px solid #0B3C5D; padding-top: 7px; }
+.cover-kpi b { display: block; color: #0B3C5D; font-size: 16pt; line-height: 1.1; }
+.cover-kpi span { display: block; color: #52606D; font-size: 7.4pt; text-transform: uppercase; letter-spacing: .4px; margin-top: 2px; }
+.cover-note { color: #334E68; font-size: 8.8pt; margin-top: 14px; max-width: 155mm; }
+.appendix { break-before: page; page-break-before: always; }
+.footer { color: #7b8794; font-size: 7.2pt; border-top: 1px solid #e4eaf0; padding-top: 5px; margin-top: 12px; }
+</style></head><body>
+
+<div class="cover">
+  <div>
+    <div class="eyebrow">Crypto &amp; Web3 Portfolio Analysis · worked example</div>
+    <h1>Synthetic<br>Portfolio Review</h1>
+    <div class="lead">A complete full-review example: IPS-lite, concentration, risk, liquidity, scenarios, decision record and a visual pack.</div>
+    <div class="rule"></div>
+    <div class="meta">
+      <div><b>As of:</b> 2026-10-30 14:00 UTC</div>
+      <div><b>Base currency:</b> USD</div>
+      <div><b>Portfolio:</b> $100,000 synthetic</div>
+      <div><b>Benchmark:</b> BTC</div>
+      <div><b>Mode:</b> Full Review</div>
+      <div><b>Data coverage:</b> 92%</div>
+    </div>
+    <div class="cover-kpis">
+      <div class="cover-kpi"><b>$100,000</b><span>synthetic value</span></div>
+      <div class="cover-kpi"><b>65%</b><span>top-two weight</span></div>
+      <div class="cover-kpi"><b>7.1%</b><span>daily CVaR</span></div>
+      <div class="cover-kpi"><b>92%</b><span>data coverage</span></div>
+    </div>
+    <div class="cover-note">What this demonstrates: mandate before numbers, evidence classes, risk clusters rather than tickers, exit capacity, scenario and reverse stress, and a decision record with falsifiers. Every chart is synthetic and every material number is labelled.</div>
+  </div>
+  <div>
+    <div class="tag">SYNTHETIC — NOT A REAL PORTFOLIO</div>
+    <div class="disclaimer"><b>Important:</b> This is an illustrative example, not investment, tax, or legal advice. It contains no real wallet, person, or live price. The skill is read-only and never executes a transaction.</div>
+    <div class="footer">Evidence classes: VERIFIED · REPORTED · ESTIMATED · MODELED · UNVERIFIED</div>
+  </div>
+</div>
+
+<p><strong>As of:</strong> 2026-10-30 14:00 UTC<br />
+<strong>Base currency:</strong> USD<br />
+<strong>Data coverage:</strong> 92% (four live positions; small-cap price six hours old)<br />
+<strong>Benchmark:</strong> BTC<br />
+<strong>Mode:</strong> Full Review</p>
+<blockquote>
+<p>Synthetic example. No real wallet, person, or investment recommendation.</p>
+</blockquote><h2>1. Executive Summary</h2>
+<ul>
+<li><strong>Main finding:</strong> 65% of the portfolio sits in BTC and ETH, so it behaves like a high-beta crypto index with a small illiquid tail.</li>
+<li><strong>Why it matters:</strong> The portfolio trails BTC; the gap must be separated into selection, beta, fees, and liquidity risk.</li>
+<li><strong>Verified:</strong> Prices from two sources; balances reconciled within 0.4%.</li>
+<li><strong>Not verified:</strong> True exit depth for the small-cap; cost basis is missing.</li>
+<li><strong>Decision:</strong> Review the small-cap and cap the single-position weight. This is not a trade instruction.</li>
+<li><strong>What would change the view:</strong> Small-cap exit time under five days, or beta above 1.4.</li>
+</ul><h2>2. Mandate and IPS-lite</h2>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Detail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Purpose</td>
+<td>Growth over three years</td>
+</tr>
+<tr>
+<td>Return objective</td>
+<td>Long-term growth with BTC-like risk, not maximum yield</td>
+</tr>
+<tr>
+<td>Risk tolerance</td>
+<td>Maximum 35% drawdown</td>
+</tr>
+<tr>
+<td>Liquidity</td>
+<td>$20,000 within 12 months</td>
+</tr>
+<tr>
+<td>Constraints</td>
+<td>30% single-position cap; no leverage</td>
+</tr>
+<tr>
+<td>Review</td>
+<td>Quarterly; monthly risk check</td>
+</tr>
+</tbody>
+</table><h2>3. Portfolio Snapshot</h2>
+<table>
+<thead>
+<tr>
+<th>Position</th>
+<th style="text-align: right;">Value</th>
+<th style="text-align: right;">Weight</th>
+<th>Source/time</th>
+<th>Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BTC</td>
+<td style="text-align: right;">$42,000</td>
+<td style="text-align: right;">42.0%</td>
+<td>Two venues, 14:00 UTC</td>
+<td>VERIFIED</td>
+</tr>
+<tr>
+<td>ETH</td>
+<td style="text-align: right;">$23,000</td>
+<td style="text-align: right;">23.0%</td>
+<td>Two venues, 14:00 UTC</td>
+<td>VERIFIED</td>
+</tr>
+<tr>
+<td>SOL</td>
+<td style="text-align: right;">$15,000</td>
+<td style="text-align: right;">15.0%</td>
+<td>Venue + aggregator</td>
+<td>VERIFIED</td>
+</tr>
+<tr>
+<td>USDC</td>
+<td style="text-align: right;">$12,000</td>
+<td style="text-align: right;">12.0%</td>
+<td>Issuer + market</td>
+<td>VERIFIED</td>
+</tr>
+<tr>
+<td>SMALL</td>
+<td style="text-align: right;">$8,000</td>
+<td style="text-align: right;">8.0%</td>
+<td>One DEX, 08:00 UTC</td>
+<td>ESTIMATED</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td style="text-align: right;"><strong>$100,000</strong></td>
+<td style="text-align: right;"><strong>100%</strong></td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Top-1 / Top-2 / Top-3:</strong> 42.0% / 65.0% / 80.0%<br />
+<strong>HHI:</strong> 0.2726; <strong>effective positions:</strong> 3.67<br />
+<strong>Cluster map:</strong> BTC 42%, ETH 23%, SOL 15%, stablecoin 12%, small-cap 8%.</p>
+<figure class="chart">
+  <img src="charts/V1-allocation.png" alt="BTC 42 percent and top two 65 percent">
+  <figcaption><b>Finding:</b> BTC is 42% of the book; the top two positions are 65%. <b>Source/date:</b> Synthetic data, 2026-10-30. <b>Limitation:</b> Illustrative only; not a live portfolio.</figcaption>
+</figure>
+
+<figure class="chart">
+  <img src="charts/V2-concentration.png" alt="Top two and cluster limits breached">
+  <figcaption><b>Finding:</b> The top-two and major-crypto cluster limits are both breached. <b>Source/date:</b> Synthetic policy limits, 2026-10-30. <b>Limitation:</b> Policy limits are illustrative, not the reader's mandate.</figcaption>
+</figure>
+<h2>4. Performance and Attribution</h2>
+<table>
+<thead>
+<tr>
+<th>Measure</th>
+<th style="text-align: right;">Value</th>
+<th>Window</th>
+<th>Benchmark</th>
+<th>Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TWR</td>
+<td style="text-align: right;">+18.4%</td>
+<td>2026-01-01 to 2026-10-30</td>
+<td>BTC +24.1%</td>
+<td>VERIFIED</td>
+</tr>
+<tr>
+<td>MWR</td>
+<td style="text-align: right;">+16.9%</td>
+<td>Same</td>
+<td>—</td>
+<td>ESTIMATED</td>
+</tr>
+<tr>
+<td>Contribution</td>
+<td style="text-align: right;">BTC +9.8; ETH +5.1; SOL +4.2; other −0.7</td>
+<td>Same</td>
+<td>—</td>
+<td>ESTIMATED</td>
+</tr>
+</tbody>
+</table>
+<p>The portfolio trails BTC by 5.7 points. With no cost basis, this is a value-change analysis, not P&amp;L.</p>
+<figure class="chart">
+  <img src="charts/V4-performance.png" alt="Portfolio trails BTC by 5.7 points">
+  <figcaption><b>Finding:</b> The synthetic portfolio trails BTC by 5.7 percentage points. <b>Source/date:</b> Synthetic price and flow data, 2026-01-01 to 2026-10-30. <b>Limitation:</b> Illustrative returns; no cost basis or fees.</figcaption>
+</figure>
+
+<figure class="chart">
+  <img src="charts/V5-drawdown.png" alt="Drawdown stops just inside the 35 percent limit">
+  <figcaption><b>Finding:</b> Maximum drawdown stops just inside the 35% loss limit. <b>Source/date:</b> Synthetic daily marks, 2024-10-30 to 2026-10-30. <b>Limitation:</b> A backtest is not a forecast of the next drawdown.</figcaption>
+</figure>
+<h2>5. Risk Dashboard</h2>
+<table>
+<thead>
+<tr>
+<th>Measure</th>
+<th style="text-align: right;">Value</th>
+<th>Window</th>
+<th>Method</th>
+<th>Limit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Volatility</td>
+<td style="text-align: right;">58%</td>
+<td>365d</td>
+<td>Historical</td>
+<td>50%</td>
+</tr>
+<tr>
+<td>Max drawdown</td>
+<td style="text-align: right;">−34%</td>
+<td>2 years</td>
+<td>Daily marks</td>
+<td>−35%</td>
+</tr>
+<tr>
+<td>VaR 95% 1d</td>
+<td style="text-align: right;">4.8%</td>
+<td>365d</td>
+<td>Historical</td>
+<td>4.0%</td>
+</tr>
+<tr>
+<td>CVaR 95% 1d</td>
+<td style="text-align: right;">7.1%</td>
+<td>365d</td>
+<td>Historical</td>
+<td>6.0%</td>
+</tr>
+<tr>
+<td>Beta vs BTC</td>
+<td style="text-align: right;">1.12</td>
+<td>365d</td>
+<td>OLS</td>
+<td>1.20</td>
+</tr>
+<tr>
+<td>Top risk contribution</td>
+<td style="text-align: right;">BTC 46%</td>
+<td>365d</td>
+<td>Component CVaR</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p>VaR is not a maximum loss. The portfolio is close to its drawdown limit and above its volatility and CVaR limits.</p>
+<figure class="chart">
+  <img src="charts/V6-risk-return.png" alt="Most risk budget is in BTC and ETH">
+  <figcaption><b>Finding:</b> BTC and ETH carry most of the risk budget; the small-cap adds a fat tail. <b>Source/date:</b> Synthetic returns, 365 days. <b>Limitation:</b> Volatility and VaR are model-dependent.</figcaption>
+</figure>
+
+<figure class="chart">
+  <img src="charts/V7-correlation.png" alt="Crypto legs move together; USDC is the diversifier">
+  <figcaption><b>Finding:</b> Crypto legs are highly correlated; USDC is the main price diversifier. <b>Source/date:</b> Synthetic daily returns, 365 days. <b>Limitation:</b> Correlation is unstable and can rise in a crisis.</figcaption>
+</figure>
+<h2>6. Liquidity and Exit</h2>
+<table>
+<thead>
+<tr>
+<th>Position</th>
+<th style="text-align: right;">Value</th>
+<th style="text-align: right;">Daily executable volume</th>
+<th style="text-align: right;">5% exit days</th>
+<th style="text-align: right;">Stressed exit days</th>
+<th>Gate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BTC</td>
+<td style="text-align: right;">$42,000</td>
+<td style="text-align: right;">$8.0B</td>
+<td style="text-align: right;">0.01</td>
+<td style="text-align: right;">0.01</td>
+<td>None</td>
+</tr>
+<tr>
+<td>ETH</td>
+<td style="text-align: right;">$23,000</td>
+<td style="text-align: right;">$4.0B</td>
+<td style="text-align: right;">0.01</td>
+<td style="text-align: right;">0.01</td>
+<td>None</td>
+</tr>
+<tr>
+<td>SOL</td>
+<td style="text-align: right;">$15,000</td>
+<td style="text-align: right;">$600M</td>
+<td style="text-align: right;">0.01</td>
+<td style="text-align: right;">0.03</td>
+<td>None</td>
+</tr>
+<tr>
+<td>USDC</td>
+<td style="text-align: right;">$12,000</td>
+<td style="text-align: right;">$2.0B</td>
+<td style="text-align: right;">0.01</td>
+<td style="text-align: right;">0.01</td>
+<td>Issuer redemption</td>
+</tr>
+<tr>
+<td>SMALL</td>
+<td style="text-align: right;">$8,000</td>
+<td style="text-align: right;">$180,000</td>
+<td style="text-align: right;">0.9</td>
+<td style="text-align: right;">17.8</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<p>The small-cap is not a liquidity problem at 8% of this portfolio, but it is the first position that cannot be exited quickly in stress.</p>
+<figure class="chart">
+  <img src="charts/V8-liquidity.png" alt="Only the small-cap breaches the exit window in stress">
+  <figcaption><b>Finding:</b> Only the small-cap breaches the five-day exit window under stress. <b>Source/date:</b> Synthetic volume data, 2026-10-30. <b>Limitation:</b> Volume is a proxy, not a full order-book simulation.</figcaption>
+</figure>
+<h2>7. Asset-Level Findings</h2>
+<h3>BTC</h3>
+<p>Reserve asset; deep liquidity; no cash flow. Main risks: regulation, custody, beta.</p>
+<h3>ETH</h3>
+<p>Smart-contract infrastructure; staking yield and burn; validator/MEV and L2 value migration risks.</p>
+<h3>SOL</h3>
+<p>High-performance L1; staking and network usage; outage history, validator concentration, competition.</p>
+<h3>USDC</h3>
+<p>Liquidity buffer, not cash. Issuer, reserve, and redemption-gate risk. A 12% weight is a policy choice, not a risk-free allocation.</p>
+<h3>SMALL</h3>
+<p>Low float, one DEX price, no independent second source. Tokenomics and unlock schedule need verification. Treat the position as <code>ESTIMATED</code>, not verified.</p><h2>8. DeFi and On-chain</h2>
+<p>No lending or LP positions in this example. Recent BTC/ETH exchange outflows are mildly negative; this is context, not a thesis. Entity labels are probabilistic.</p><h2>9. Scenarios</h2>
+<table>
+<thead>
+<tr>
+<th>Scenario</th>
+<th>Shocks</th>
+<th style="text-align: right;">Portfolio loss</th>
+<th>Worst position</th>
+<th>First breach</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Risk-off</td>
+<td>BTC −30%, ETH −40%, SOL −50%, SMALL −70%</td>
+<td style="text-align: right;">$30,900 / 30.9%</td>
+<td>SMALL</td>
+<td>Near drawdown limit</td>
+</tr>
+<tr>
+<td>Stablecoin depeg</td>
+<td>USDC −20%</td>
+<td style="text-align: right;">$2,400 / 2.4%</td>
+<td>USDC</td>
+<td>Liquidity gate</td>
+</tr>
+<tr>
+<td>Liquidity shock</td>
+<td>Small-cap volume −75%</td>
+<td style="text-align: right;">17.8 exit days</td>
+<td>SMALL</td>
+<td>Not the 12-month need</td>
+</tr>
+<tr>
+<td>Reverse stress</td>
+<td>BTC −45%, ETH −55%, SOL −65%, SMALL −85%</td>
+<td style="text-align: right;">$47,500 / 47.5%</td>
+<td>SMALL</td>
+<td>35% drawdown breach</td>
+</tr>
+</tbody>
+</table>
+<figure class="chart">
+  <img src="charts/V9-scenarios.png" alt="Reverse stress breaches the loss floor">
+  <figcaption><b>Finding:</b> The reverse-stress path breaches the 35% loss floor; risk-off does not. <b>Source/date:</b> Synthetic shocks, 2026-10-30. <b>Limitation:</b> Shocks are illustrative, not probabilities.</figcaption>
+</figure>
+<h2>10. Alternatives and Rebalancing</h2>
+<table>
+<thead>
+<tr>
+<th>Alternative</th>
+<th>Risk</th>
+<th>Liquidity</th>
+<th>Concentration</th>
+<th>Cost/tax</th>
+<th>What would make it wrong?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Current</td>
+<td>High beta</td>
+<td>Good except small-cap</td>
+<td>Top-2 65%</td>
+<td>Low</td>
+<td>BTC rally continues</td>
+</tr>
+<tr>
+<td>Risk-reduced</td>
+<td>Lower beta</td>
+<td>Better</td>
+<td>Top-2 55%</td>
+<td>Medium</td>
+<td>Bull market missed</td>
+</tr>
+<tr>
+<td>Diversified-within-thesis</td>
+<td>Similar beta</td>
+<td>Medium</td>
+<td>Top-2 50%</td>
+<td>Medium</td>
+<td>Correlations rise</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Bands:</strong> ±5 percentage points; ±3 for the small-cap.<br />
+<strong>Tax note:</strong> Cost basis missing; tax impact not assessable.</p><h2>11. Decision Record</h2>
+<ul>
+<li><strong>Decision:</strong> Review the small-cap; enforce the 30% single-position cap; classify USDC as a counterparty-bearing liquidity buffer.</li>
+<li><strong>Rationale:</strong> Top-2 65%, weak small-cap liquidity, underperformance vs BTC.</li>
+<li><strong>Size/implementation:</strong> No size without constraints.</li>
+<li><strong>Falsifiers:</strong> Small-cap exit time below five days, or beta above 1.4.</li>
+<li><strong>Review:</strong> 2027-01-30; monthly liquidity and beta check.</li>
+</ul><h2>12. Sources and Limitations</h2>
+<ul>
+<li>Prices: two independent venues/aggregators, 2026-10-30 14:00 UTC.</li>
+<li>Balances: wallet plus second source; 0.4% difference.</li>
+<li>Small-cap: one DEX, 08:00 UTC; no independent confirmation.</li>
+<li>Cost basis missing; value change is not P&amp;L.</li>
+<li>Not investment, tax, or legal advice.</li>
+</ul>
+
+<div class="appendix">
+<h2>Appendix A — Reproducibility and quality checks</h2>
+<p>This appendix is part of the worked example. It shows the checks a reviewer should expect before accepting a full review, not a claim that the synthetic inputs are live.</p>
+<table>
+<thead><tr><th>Check</th><th>Result in this example</th></tr></thead>
+<tbody>
+<tr><td>Mandate captured before the verdict</td><td>IPS-lite table on page 2: growth, three-year horizon, 35% drawdown limit, $20k liquidity need, 30% single-position cap.</td></tr>
+<tr><td>Data coverage stated</td><td>92%; the small-cap price is six hours old and has one venue. It is marked ESTIMATED.</td></tr>
+<tr><td>Evidence classes</td><td>Every table uses VERIFIED, REPORTED, ESTIMATED, MODELED or UNVERIFIED; no material number is silently filled.</td></tr>
+<tr><td>Concentration and clusters</td><td>Top-1 42%, top-2 65%, top-3 80%; major-crypto cluster 80%, so the ticker count overstates diversification.</td></tr>
+<tr><td>Risk budget</td><td>Volatility 58%, max drawdown −34%, VaR(95) 4.8%, CVaR(95) 7.1%, beta 1.12; volatility and CVaR exceed the illustrative limits.</td></tr>
+<tr><td>Liquidity and exit</td><td>Large caps exit in under 0.1 day at 5% participation; the small-cap takes 0.9 day normally and 17.8 days in stress.</td></tr>
+<tr><td>Scenarios and reverse stress</td><td>Risk-off −30.9%, stablecoin depeg −2.4%, reverse stress −47.5%; the reverse path breaches the 35% loss floor.</td></tr>
+<tr><td>Decision record</td><td>Review the small-cap; enforce the 30% single-position cap; classify USDC as counterparty-bearing liquidity; state falsifiers and a review date.</td></tr>
+<tr><td>Visual QA</td><td>Eight charts; one finding per chart; source/date, unit, and limitation on every figure; bars start at zero; no 3D, pie, or unlabeled dual axis.</td></tr>
+<tr><td>Read-only boundary</td><td>No wallet, key, signature, approval, bridge, deposit, or order; no transaction was executed.</td></tr>
+</tbody></table>
+<div class="callout"><b>What would change the view:</b> small-cap exit time below five days, beta below 1.0, or a verified cost basis that changes the return attribution. Until then, the correct output is a conditional review, not a trade.</div>
+</div>
+
+<div class="footer">Synthetic example · Crypto &amp; Web3 Portfolio Analysis · 2026-10-30 · Not investment advice · No transaction was executed.</div>
+</body></html>

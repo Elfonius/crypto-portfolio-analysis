@@ -1,0 +1,15 @@
+{
+  "as_of": "2026-10-30",
+  "base_currency": "TAO",
+  "positions": [
+    {"id": "Lium", "symbol": "SN51", "value": 2.818825, "asset_class": "subnet-alpha", "cluster": "Bittensor"},
+    {"id": "Bitcast", "symbol": "SN93", "value": 1.510701, "asset_class": "subnet-alpha", "cluster": "Bittensor"},
+    {"id": "NOVA", "symbol": "SN68", "value": 0.350365, "asset_class": "subnet-alpha", "cluster": "Bittensor"},
+    {"id": "Almanac", "symbol": "SN41", "value": 0.338382, "asset_class": "subnet-alpha", "cluster": "Bittensor"},
+    {"id": "Engy", "symbol": "SN53", "value": 0.270037, "asset_class": "subnet-alpha", "cluster": "Bittensor"},
+    {"id": "Root", "symbol": "SN0", "value": 0.228571, "asset_class": "staking", "cluster": "Bittensor"},
+    {"id": "Hippius", "symbol": "SN75", "value": 0.190537, "asset_class": "subnet-alpha", "cluster": "Bittensor"},
+    {"id": "Free", "symbol": "TAO", "value": 0.020002, "asset_class": "cash", "cluster": "Bittensor"}
+  ],
+  "policy": {"top1_limit": 0.30, "top2_limit": 0.60, "top3_limit": 0.80, "cluster_limit": 0.50, "stablecoin_limit": 0.20}
+}

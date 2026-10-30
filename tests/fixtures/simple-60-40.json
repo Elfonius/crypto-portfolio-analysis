@@ -1,0 +1,15 @@
+{
+  "as_of": "2026-10-30",
+  "base_currency": "USD",
+  "positions": [
+    {"id": "BTC", "symbol": "BTC", "value": 600, "asset_class": "crypto", "cluster": "BTC"},
+    {"id": "ETH", "symbol": "ETH", "value": 400, "asset_class": "crypto", "cluster": "ETH"}
+  ],
+  "returns": {
+    "BTC": [0.01, 0.02, -0.01, 0.0, 0.03],
+    "ETH": [0.015, 0.01, -0.02, 0.01, 0.02]
+  },
+  "benchmark_returns": [0.01, 0.015, -0.01, 0.0, 0.025],
+  "equity_curve": [100, 110, 105, 115, 120],
+  "policy": {"top1_limit": 0.7, "top2_limit": 1.0, "cluster_limit": 0.7, "stablecoin_limit": 0.2}
+}

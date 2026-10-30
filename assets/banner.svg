@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-label="Crypto and Web3 Portfolio Analysis">
+  <rect width="1200" height="300" fill="#0b1220"/>
+  <rect x="0" y="0" width="8" height="300" fill="#7cf7c4"/>
+  <text x="64" y="112" fill="#f5f7fb" font-family="Georgia, 'Times New Roman', serif" font-size="54">Crypto &amp; Web3</text>
+  <text x="64" y="176" fill="#7cf7c4" font-family="Georgia, 'Times New Roman', serif" font-size="54">Portfolio Analysis</text>
+  <text x="66" y="226" fill="#9fb0c7" font-family="Arial, Helvetica, sans-serif" font-size="20">Read-only, source-bounded, decision-ready.</text>
+  <text x="66" y="258" fill="#6f819a" font-family="Arial, Helvetica, sans-serif" font-size="14">16 lenses · 3 modes · IPS-lite · risk · tokenomics · DeFi · scenarios</text>
+  <g transform="translate(1000 80)" fill="none" stroke="#7cf7c4" stroke-width="2" opacity="0.7">
+    <circle cx="60" cy="60" r="58"/>
+    <circle cx="60" cy="60" r="36"/>
+    <path d="M60 2v116M2 60h116" opacity="0.35"/>
+  </g>
+</svg>

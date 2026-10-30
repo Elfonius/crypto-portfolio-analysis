@@ -1,0 +1,29 @@
+name: Bug report
+description: Report a broken command, validator failure, or incorrect calculation
+title: "[bug] "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: Include the command and the actual output. Do not include wallet addresses or secrets.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version / commit
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety
+      options:
+        - label: I did not include a seed phrase, private key, password, API secret, or live wallet address.
+          required: true

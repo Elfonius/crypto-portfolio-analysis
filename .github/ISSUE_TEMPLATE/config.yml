@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security issue
+    url: https://github.com/Elfonius/crypto-portfolio-analysis/security/advisories/new
+    about: Report a vulnerability privately; do not include secrets or wallet addresses.

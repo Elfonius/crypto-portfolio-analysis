@@ -1,0 +1,9 @@
+{
+  "as_of": "2026-10-30",
+  "base_currency": "USD",
+  "positions": [
+    {"id": "SMALL", "symbol": "SMALL", "value": 800, "asset_class": "crypto", "cluster": "small-cap"},
+    {"id": "USDC", "symbol": "USDC", "value": 200, "asset_class": "stablecoin", "cluster": "stablecoin"}
+  ],
+  "policy": {"top1_limit": 0.30, "top2_limit": 0.60, "cluster_limit": 0.50, "stablecoin_limit": 0.20}
+}

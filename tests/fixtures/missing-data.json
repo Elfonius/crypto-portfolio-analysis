@@ -1,0 +1,8 @@
+{
+  "as_of": "2026-10-30",
+  "base_currency": "USD",
+  "positions": [
+    {"id": "KNOWN", "symbol": "KNOWN", "value": 500, "asset_class": "crypto", "cluster": "major"},
+    {"id": "UNKNOWN", "symbol": "UNKNOWN", "value": null, "asset_class": "crypto", "cluster": "unknown"}
+  ]
+}

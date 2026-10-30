@@ -1,0 +1,23 @@
+name: Feature request
+description: Propose a method, template, or data-source improvement
+title: "[feature] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What decision does this improve?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Source or method
+      description: Link the authoritative source and state its date. Do not paste paywalled text.
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope
+      options:
+        - label: This keeps the skill read-only.
+        - label: This does not add a personal dependency or private data.
